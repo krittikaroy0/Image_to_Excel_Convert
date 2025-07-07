@@ -1,0 +1,9 @@
+CREATE DATABASE image_to_excel_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE image_to_excel_db;
+
+CREATE TABLE uploads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    filename VARCHAR(255) NOT NULL,
+    extracted_text LONGTEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
